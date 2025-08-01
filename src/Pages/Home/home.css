@@ -88,6 +88,7 @@
   font-size: 18px;
   color: #e0e0e0;
   margin-top: 40px;
+  text-align: justify;
 }
 
 .home-btn {
@@ -140,7 +141,7 @@
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-radius: 20px;
-  padding: 80px;
+  padding: 80px 20px;
   width: 100%;
   height: 700px;
   margin: 30px auto;
@@ -429,6 +430,7 @@ button {
     top: -20px;
     padding: 8px 20px;
   }
+ 
 }
 
 /* Optional for better readability on smaller screens */
@@ -604,7 +606,7 @@ button {
   .banner-text h1,
   .home-about-text h1,
   .home-skills-card h1 {
-    font-size: 26px;
+    font-size: 30px;
   }
 
   .banner-text .domain,
@@ -619,8 +621,8 @@ button {
 
   .profile-img,
   .home-about-img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin-bottom: 20px;
   }
 
@@ -652,5 +654,8 @@ button {
   .skill-icon-img {
     width: 24px;
     height: 24px;
+  }
+   .banner-text span{
+    font-size: 40px;
   }
 }
