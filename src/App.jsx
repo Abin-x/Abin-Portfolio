@@ -1,8 +1,8 @@
 import './App.css';
 import { Route,Routes } from 'react-router-dom';
-import Header from './components/Ui/Header/header';
-import Home from './Pages/Home/home';
-import About from './Pages/About/about';
+import Header from './components/Ui/Header/header.jsx';
+import Home from './Pages/Home/home.jsx';
+import About from './Pages/About/about.jsx';
 
 const App = () => {
   return (
