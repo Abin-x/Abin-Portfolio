@@ -1,0 +1,656 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.home-container {
+  width: 100%;
+  max-height: 100vh;
+  padding: 60px 40px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  /* background: linear-gradient(to right, #7d00a3, #5f0d8f, #8101e2); */
+  /* display: flex;
+  justify-content: center; */
+  /* align-items: center;   */
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+/* Banner with Glass Effect */
+.home-banner {
+  margin-top: -10px;
+  background: rgba(55, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  /* padding: 40px; */
+}
+
+/* Profile Image Styling */
+.profile-img {
+  flex-shrink: 0;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hover effect on image */
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* Banner Text Styling */
+.banner-text {
+  color: #fff;
+  max-width: 600px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.banner-text h1 {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.8;
+  /* margin-bottom: 20px; */
+}
+
+.banner-text span {
+  font-size: 60px;
+  font-weight: 700;
+  color: #00e5ff;
+}
+
+.banner-text .domain {
+  font-size: 25px;
+  color: #099ef5;
+  /* margin-bottom: 30px; */
+}
+
+.banner-text .bio {
+  font-size: 18px;
+  color: #e0e0e0;
+  margin-top: 40px;
+}
+
+.home-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.contact-btn {
+  background-color: #2d7b81;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #006aff;
+  transform: scale(1.05);
+}
+
+.download-btn {
+  background-color: #238aa4;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #006aff;
+  transform: scale(1.05);
+}
+/* home About */
+.home-about-me {
+  margin-top: -60px;
+  width: 100%;
+  max-height: 100vh;
+  padding: 60px 40px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.home-about-card {
+  background: rgba(55, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 80px;
+  width: 100%;
+  height: 700px;
+  margin: 30px auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  display: flex;
+  align-items: center;
+  gap: 299px;
+}
+
+.home-about-img {
+  flex-shrink: 0;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.home-about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-about-img:hover {
+  transform: scale(1.05);
+}
+
+.home-about-text h1 {
+  color: #0bade7;
+  font-size: 40px;
+  margin-bottom: 20px;
+
+  /* position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2c5364;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  z-index: 1; */
+}
+
+.home-about-banner p {
+  font-size: 18px;
+  color: white;
+  text-align: justify;
+}
+
+/* Home Skills */
+
+.home-skills {
+  margin-top: -100px;
+  width: 100%;
+  padding: 60px 40px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.home-skills-card {
+  background: rgba(55, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  width: 100%;
+  /* margin: 70px auto; */
+  margin-top: 110px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.home-skills-card h1 {
+  text-align: center;
+  color: #3798bb;
+  font-size: 40px;
+  margin-bottom: 10px;
+
+  /* position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2c5364;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  z-index: 1; */
+}
+
+.home-skills-sub {
+  text-align: center;
+  color: #cccccc;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+  padding: 0 30px;
+}
+
+.skill-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.skill-card p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.progress-bar-bg {
+  background-color: #e0e0e0;
+  height: 6px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.skill-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Home Project */
+
+/* .home-project {
+  width: 100%;
+  max-height: 100vh;
+  padding: 60px 40px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+} */
+/* Projects Section */
+.home-project {
+  width: 100%;
+  padding: 60px 40px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+/* Card Background Container */
+.home-project-card-bg {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 80px 40px 40px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  position: relative;
+}
+
+/* Section Heading */
+.home-project-card-bg h2 {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2c5364;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  z-index: 1;
+}
+
+/* Grid Layout */
+.home-project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Project Image Card */
+.home-project-card {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  height: 100%;
+}
+
+.home-project-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.home-project-card p {
+  padding: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+button {
+  background-color: #2d7b81;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pro-btn {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+/* Hover effect */
+.home-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.home-project-card:hover img {
+  transform: scale(1.03);
+}
+
+/* Responsive Layout */
+
+/* Tablets: 2 columns */
+@media (min-width: 768px) {
+  .home-project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large screens: 3 columns */
+@media (min-width: 1024px) {
+  .home-project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Small devices */
+@media (max-width: 600px) {
+  .home-project {
+    padding: 40px 20px;
+  }
+
+  .home-project-card-bg {
+    padding: 40px 20px 20px;
+  }
+
+  .home-project-card-bg h2 {
+    font-size: 20px;
+    top: -20px;
+    padding: 8px 20px;
+  }
+}
+
+/* Optional for better readability on smaller screens */
+@media (max-width: 768px) {
+  .bio {
+    font-size: 1rem;
+    padding: 15px 20px;
+  }
+}
+
+/* Simple fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+  .home-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .banner-text p {
+    font-size: 1.2rem;
+  }
+
+  .banner-text span {
+    font-size: 1.6rem;
+  }
+} */
+
+/* ========== Large Desktop (≥1200px) ========== */
+@media (min-width: 1200px) {
+  .home-container,
+  .home-about-me,
+  /* .home-skills {
+    padding: 80px 100px;
+  } */
+
+  .banner-text h1,
+  .home-about-text h1,
+  .home-skills-card h1 {
+    font-size: 48px;
+  }
+
+  .banner-text .domain,
+  .home-skills-sub {
+    font-size: 22px;
+  }
+
+  .home-btn {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+/* ========== Laptop / Tablet Landscape (768px–1199px) ========== */
+@media (max-width: 1199px) {
+  .home-container,
+  .home-about-me,
+  .home-skills {
+    padding: 60px 40px;
+  }
+
+  .home-banner,
+  .home-about-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .profile-img,
+  .home-about-img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .banner-text h1 {
+    font-size: 36px;
+  }
+
+  .banner-text .domain {
+    font-size: 20px;
+  }
+
+  .home-btn {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+  }
+}
+
+/* ========== Tablet Portrait / Small Laptop (601px–767px) ========== */
+@media (max-width: 767px) {
+  .home-container,
+  .home-about-me,
+  .home-skills {
+    padding: 40px 20px;
+  }
+
+  .banner-text h1,
+  .home-about-text h1 {
+    font-size: 30px;
+  }
+
+  .banner-text .domain,
+  .home-skills-sub {
+    font-size: 18px;
+  }
+
+  .home-btn {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .contact-btn,
+  .download-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .skill-card p {
+    font-size: 14px;
+  }
+
+  .skill-icon {
+    font-size: 26px;
+  }
+
+  .skill-icon-img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* ========== Mobile (≤600px) ========== */
+@media (max-width: 600px) {
+  .home-container,
+  .home-about-me,
+  .home-skills {
+    padding: 30px 15px;
+  }
+
+  .home-banner,
+  .home-about-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .banner-text h1,
+  .home-about-text h1,
+  .home-skills-card h1 {
+    font-size: 26px;
+  }
+
+  .banner-text .domain,
+  .home-skills-sub {
+    font-size: 16px;
+  }
+
+  .banner-text .bio,
+  .home-about-banner p {
+    font-size: 14px;
+  }
+
+  .profile-img,
+  .home-about-img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .home-btn {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .contact-btn,
+  .download-btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .skill-card p {
+    font-size: 13px;
+  }
+
+  .skill-icon {
+    font-size: 24px;
+  }
+
+  .skill-icon-img {
+    width: 24px;
+    height: 24px;
+  }
+}
