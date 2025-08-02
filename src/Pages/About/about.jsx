@@ -5,7 +5,7 @@ const about = () => {
   return (
     <>
       {/* About Section */}
-      <div className="home-about-me">
+      <div className="home-about-me" id='about'>
         <div className="home-about-card">
           <div className="home-about-img">
             <img src="/img/IMG_20250609_115924~2.jpg" alt="" />

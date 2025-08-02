@@ -1,80 +1,82 @@
-import React from 'react';
+import About from '../About/about';
+import Skills from '../Skills/skills';
+import Projects from '../Projects/projects';
 import './home.css';
 
-const skills = [
-  {
-    name: 'HTML5',
-    icon: 'fa-html5',
-    color: '#f16529',
-    level: '90%',
-  },
-  {
-    name: 'CSS3',
-    icon: 'fa-css3-alt',
-    color: '#2965f1',
-    level: '85%',
-  },
-  {
-    name: 'JavaScript',
-    icon: 'fa-js-square',
-    color: '#f0db4f',
-    level: '80%',
-  },
-  {
-    name: 'React',
-    icon: 'fa-react',
-    color: '#61DBFB',
-    level: '80%',
-  },
-  {
-    name: 'Node.js',
-    icon: 'fa-node-js',
-    color: '#3C873A',
-    level: '78%',
-  },
-  {
-    name: 'Express.js',
-    img: '/img/icons8-server-64.png', // Assuming you have an Express.js icon
-    color: '#28a745',
-    level: '75%',
-  },
-  {
-    name: 'MongoDB',
-    img: '/img/icons8-database-50.png',
-    color: '#4DB33D',
-    level: '77%',
-  },
-  {
-    name: 'Figma',
-    icon: 'fa-figma',
-    color: '#a259ff',
-    level: '70%',
-  },
-  {
-    name: 'Git',
-    icon: 'fa-git-alt',
-    color: '#f77b00',
-    level: '70%',
-  },
-  {
-    name: 'Next.js',
-    img: '/img/icons8-nextjs-48.png',
-    color: '#000',
-    level: '70%',
-  },
-  {
-    name: 'TypeScript',
-    img: '/img/icons8-typescript-48.png',
-    color: '#0088f7',
-    level: '70%',
-  },
-  {
-    name: 'GitHub',
-    img: '/img/icons8-github-50.png',
-    color: '#000',
-    level: '70%',
-  },
-];
+// const skills = [
+//   {
+//     name: 'HTML5',
+//     icon: 'fa-html5',
+//     color: '#f16529',
+//     level: '90%',
+//   },
+//   {
+//     name: 'CSS3',
+//     icon: 'fa-css3-alt',
+//     color: '#2965f1',
+//     level: '85%',
+//   },
+//   {
+//     name: 'JavaScript',
+//     icon: 'fa-js-square',
+//     color: '#f0db4f',
+//     level: '80%',
+//   },
+//   {
+//     name: 'React',
+//     icon: 'fa-react',
+//     color: '#61DBFB',
+//     level: '80%',
+//   },
+//   {
+//     name: 'Node.js',
+//     icon: 'fa-node-js',
+//     color: '#3C873A',
+//     level: '78%',
+//   },
+//   {
+//     name: 'Express.js',
+//     img: '/img/icons8-server-64.png', // Assuming you have an Express.js icon
+//     color: '#28a745',
+//     level: '75%',
+//   },
+//   {
+//     name: 'MongoDB',
+//     img: '/img/icons8-database-50.png',
+//     color: '#4DB33D',
+//     level: '77%',
+//   },
+//   {
+//     name: 'Figma',
+//     icon: 'fa-figma',
+//     color: '#a259ff',
+//     level: '70%',
+//   },
+//   {
+//     name: 'Git',
+//     icon: 'fa-git-alt',
+//     color: '#f77b00',
+//     level: '70%',
+//   },
+//   {
+//     name: 'Next.js',
+//     img: '/img/icons8-nextjs-48.png',
+//     color: '#000',
+//     level: '70%',
+//   },
+//   {
+//     name: 'TypeScript',
+//     img: '/img/icons8-typescript-48.png',
+//     color: '#0088f7',
+//     level: '70%',
+//   },
+//   {
+//     name: 'GitHub',
+//     img: '/img/icons8-github-50.png',
+//     color: '#000',
+//     level: '70%',
+//   },
+// ];
 
 const Home = () => {
   return (
@@ -103,7 +105,7 @@ const Home = () => {
       </div>
 
       {/* About Section */}
-      <div className="home-about-me" id="about">
+      {/* <div className="home-about-me" id="about">
         <div className="home-about-card">
           <div className="home-about-img">
             <img src="/img/IMG_20250609_115924~2.jpg" alt="" />
@@ -125,10 +127,11 @@ const Home = () => {
             <br />
           </div>
         </div>
-      </div>
+      </div> */}
+      <About />
 
       {/* Technical Skills */}
-      <div className="home-skills" id="services">
+      {/* <div className="home-skills" id="services">
         <div className="home-skills-card">
           <h1>Technical Skills</h1>
           <p className="home-skills-sub">Technologies and tools I work with</p>
@@ -164,10 +167,11 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
+      <Skills />
 
       {/* Projects Section */}
-      <div className="home-project" id="project">
+      {/* <div className="home-project" id="project">
         <div className="home-project-card-bg">
           <h2>My Projects</h2>
 
@@ -240,7 +244,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <Projects />
     </>
   );
 };
