@@ -13,6 +13,7 @@ const about = () => {
           <div className="home-about-banner">
             <div className="home-about-text">
               <h1>About Me</h1>
+              <h1>I am a passionate web developer.</h1>
             </div>
             <p>
               With a background in engineering and a passion for technology, I
@@ -20,12 +21,7 @@ const about = () => {
               expertise combined with design sensibility allows me to create
               solutions that are both functional and beautiful.
             </p>
-            <br />
-            <p>
-              I specialize in building robust web applications using modern
-              JavaScript frameworks and designing intuitive user interfaces that
-              enhance user experience.
-            </p>
+           <i class="fa-brands fa-instagram"></i>
           </div>
         </div>
       </div>
