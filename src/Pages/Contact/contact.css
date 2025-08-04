@@ -10,7 +10,7 @@
 }
 
 .contact-card {
-    margin-top: -300px;
+  margin-top: -300px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -21,8 +21,6 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
   color: white;
 }
-
-
 
 .contact-card h2 {
   position: absolute;
@@ -70,7 +68,7 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-button[type="submit"] {
+button[type='submit'] {
   padding: 12px;
   font-size: 16px;
   background-color: #00ffff;
@@ -82,6 +80,31 @@ button[type="submit"] {
   transition: all 0.3s ease;
 }
 
-button[type="submit"]:hover {
+button[type='submit']:hover {
   background-color: #28cbf0;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 40px 20px;
+    flex-direction: column;
+    margin-top: -90px;
+  }
+
+  .contact-card {
+   
+    padding: 30px 20px;
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  button[type='submit'] {
+    font-size: 15px;
+    padding: 10px;
+  }
 }
