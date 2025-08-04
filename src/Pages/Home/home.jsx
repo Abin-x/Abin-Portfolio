@@ -3,6 +3,7 @@ import Skills from '../Skills/skills';
 import Projects from '../Projects/projects';
 import Service from '../Service/service';
 import Contact from '../Contact/contact';
+import ContactTest from '../ContactTest/contactTest';
 import './home.css';
 
 // const skills = [
@@ -96,8 +97,8 @@ const Home = () => {
               MongoDB, Express.js, React, and Node.js.
             </p>
             <div className="home-btn">
-              <button className="contact-btn">Contact Me</button>
-              <button className="download-btn">Download CV</button>
+              <button className="contact-btn"><a href="#contact">Hire Me</a></button>
+              <button className="download-btn"><a href="/img/Abin_Y_Resume.pdf" download>Download CV</a></button>
             </div>
           </div>
           <div className="profile-img">
@@ -250,6 +251,7 @@ const Home = () => {
       <Service />
       <Projects />
       <Contact />
+      {/* <ContactTest /> */}
     </>
   );
 };

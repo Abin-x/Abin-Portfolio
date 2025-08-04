@@ -22,7 +22,10 @@ const about = () => {
                 accessible, and visually compelling web applications using
                 modern technologies and best practices.
               </p>
-
+              {/* <div className="home-btn">
+                <button className="contact-btn">Contact Me</button>
+                <button className="download-btn">Download CV</button>
+              </div> */}
               <div className="about-social-icons">
                 <a
                   href="https://instagram.com"
