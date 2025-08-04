@@ -1,0 +1,116 @@
+.home-project {
+  width: 100%;
+  padding: 60px 40px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  margin-top: -60px;
+}
+
+.home-project-card-bg {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 80px 40px 40px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  position: relative;
+}
+
+.home-project-card-bg h2 {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2c5364;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  z-index: 1;
+}
+
+/* Grid for project cards */
+.home-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* Each project block */
+.home-project-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home-project-card {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-project-card img {
+  width: 100%;
+  /* height: 300px; */
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.home-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* .home-project-card:hover img {
+  transform: scale(1.03);
+} */
+
+.project-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #00ffff;
+  margin: 0 10px;
+}
+
+.project-desc {
+  font-size: 15px;
+  color: #e0e0e0;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-project {
+    padding: 40px 20px;
+  }
+
+  .home-project-card-bg {
+    padding: 60px 20px 30px;
+  }
+
+  .home-project-card-bg h2 {
+    font-size: 22px;
+    padding: 8px 20px;
+  }
+
+  .project-title {
+    font-size: 18px;
+  }
+
+  .project-desc {
+    font-size: 14px;
+  }
+  .home-project-wrapper {
+    margin-top: -20px;
+  }
+}

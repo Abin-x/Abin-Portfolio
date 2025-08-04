@@ -1,0 +1,118 @@
+.service-container {
+  width: 100%;
+  padding: 60px 40px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -80px;
+}
+
+.service-card-bg {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: #fff;
+  text-align: center;
+  
+}
+
+.service-card-bg h2 {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2c5364;
+  padding: 10px 30px;
+  border-radius: 50px;
+  /* font-size: 28px; */
+  font-weight: bold;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 30px 40px;
+  width: 100%;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.564); */
+}
+
+.service-card h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #00ffff;
+  text-align: center;
+}
+
+.service-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+.service-card-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .service-card-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Adjust for mobile */
+@media (max-width: 600px) {
+  .service-card-box {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .service-card-bg h2 {
+    font-size: 20px;
+    padding: 8px 20px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-container {
+    padding: 40px 20px;
+    margin-top: -50px;
+  }
+
+  .service-card-bg {
+    padding: 30px 20px;
+  }
+
+  .service-card h3 {
+    font-size: 24px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+}

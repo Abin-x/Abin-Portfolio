@@ -1,8 +1,7 @@
 import './App.css';
-import { Route,Routes } from 'react-router-dom';
 import Header from './components/Ui/Header/header.jsx';
+import { Route,Routes } from 'react-router-dom';
 import Home from './Pages/Home/home.jsx';
-import About from './Pages/About/about.jsx';
 
 const App = () => {
   return (
@@ -10,7 +9,6 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   )

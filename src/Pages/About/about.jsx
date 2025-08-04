@@ -4,24 +4,42 @@ import './about.css';
 const about = () => {
   return (
     <>
-      {/* About Section */}
-      <div className="home-about-me" id='about'>
+      <div className="home-about-me" id="about">
         <div className="home-about-card">
-          <div className="home-about-img">
-            <img src="/img/IMG_20250609_115924~2.jpg" alt="" />
-          </div>
-          <div className="home-about-banner">
-            <div className="home-about-text">
-              <h1>About Me</h1>
-              <h1>I am a passionate web developer.</h1>
+          <h2 className="about-heading">About Me</h2>
+
+          <div className="home-about-grid">
+            <div className="home-about-img">
+              <img src="/img/IMG_20250609_115924~2.jpg" alt="About Me" />
             </div>
-            <p>
-              With a background in engineering and a passion for technology, I
-              bring a unique perspective to web development. My technical
-              expertise combined with design sensibility allows me to create
-              solutions that are both functional and beautiful.
-            </p>
-           <i class="fa-brands fa-instagram"></i>
+
+            <div className="home-about-banner">
+              <h3>I am a passionate Web Developer.</h3>
+              <p>
+                With a background in engineering and a strong passion for
+                technology, I bring a unique blend of creativity and technical
+                skills to web development. My mission is to build responsive,
+                accessible, and visually compelling web applications using
+                modern technologies and best practices.
+              </p>
+
+              <div className="about-social-icons">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fa-brands fa-instagram "></i>
+                </a>
+
+                <a href="https://github.com" target="_blank" rel="noreferrer">
+                  <i className="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+                  <i className="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

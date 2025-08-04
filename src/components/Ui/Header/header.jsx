@@ -31,6 +31,9 @@ const Header = () => {
         <Link smooth className="nav-item" to="/#services" onClick={closeMenu}>
           Services
         </Link>
+        <Link smooth className="nav-item" to="/#skills" onClick={closeMenu}>
+          Skills
+        </Link>
         <Link smooth className="nav-item" to="/#project" onClick={closeMenu}>
           Project
         </Link>

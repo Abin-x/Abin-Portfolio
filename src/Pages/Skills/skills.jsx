@@ -79,10 +79,10 @@ const skills = [
 
 const Skills = () => {
   return (
-      <div className="home-skills" id="services">
+      <div className="home-skills" id="skills">
         <div className="home-skills-card">
-          <h1>Technical Skills</h1>
-          <p className="home-skills-sub">Technologies and tools I work with</p>
+          <h2>My Skills</h2>
+          <h3 className="home-skills-sub">Technologies and tools I work with</h3>
 
           <div className="skills-grid">
             {skills.map((skill, index) => (
