@@ -84,63 +84,58 @@ button[type='submit']:hover {
   background-color: #28cbf0;
 }
 
-/* Large Devices (Desktops and above) */
-@media (min-width: 1200px) {
+@media (max-width: 1024px) {
   .contact-container {
-    padding: 80px 60px;
-    margin-top: -100px;
-  }
-
-  .contact-card {
-    padding: 50px;
-    max-width: 700px;
-    margin-top: -200px;
-  }
-}
-
-/* Medium Devices (Tablets) */
-@media (min-width: 768px) and (max-width: 1199px) {
-  .contact-container {
-    padding: 60px 40px;
+    /* padding: 40px 20px !important; */
+    margin-top: -150px;
     flex-direction: column;
-    margin-top: -80px;
   }
 
   .contact-card {
-    padding: 40px 30px;
-    max-width: 600px;
+    padding: 30px 20px !important;
     margin-top: -150px;
   }
 }
 
-/* Small Devices (Mobiles) */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .contact-container {
-    padding: 40px 20px;
-    flex-direction: column;
-    margin-top: -60px;
+    padding: 30px 20px !important;
+    margin-top: -160px;
   }
 
   .contact-card {
-    padding: 30px 20px;
-    width: 100%;
-    margin-top: 20px;
+    /* padding: 25px 16px !important; */
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    /* padding: 20px 12px !important; */
+    margin-top: -170px;
   }
 
-  .contact-card h2 {
-    font-size: 18px;
-    padding: 8px 12px;
+  .contact-card {
+    /* padding: 20px 12px !important; */
+    margin-top: -100px;
   }
+}
 
-  .form-group input,
-  .form-group textarea {
-    font-size: 14px;
-    padding: 10px 12px;
+@media (max-width: 1024px) {
+  .contact-card {
+    margin-top: -150px;
   }
+}
 
-  button[type='submit'] {
-    font-size: 15px;
-    padding: 10px;
+@media (max-width: 768px) {
+  .contact-card {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    margin-top: -130px;
   }
 }
 
