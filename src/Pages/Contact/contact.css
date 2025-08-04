@@ -1,0 +1,87 @@
+.contact-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 40px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -60px;
+}
+
+.contact-card {
+    margin-top: -300px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  /* max-width: 600px; */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+
+
+.contact-card h2 {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2c5364;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+button[type="submit"] {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #00ffff;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #28cbf0;
+}

@@ -2,6 +2,7 @@ import About from '../About/about';
 import Skills from '../Skills/skills';
 import Projects from '../Projects/projects';
 import Service from '../Service/service';
+import Contact from '../Contact/contact';
 import './home.css';
 
 // const skills = [
@@ -248,6 +249,7 @@ const Home = () => {
       </div> */}
       <Service />
       <Projects />
+      <Contact />
     </>
   );
 };
