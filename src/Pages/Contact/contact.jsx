@@ -11,7 +11,7 @@ import {
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div className="contact-container" id='contact'>
       <div className="contact-card">
         <h2>Contact Me</h2>
         <div className="contact-wrapper">
