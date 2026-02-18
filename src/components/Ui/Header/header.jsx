@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
-import './header.css';
+import { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
+import "./header.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,34 +14,39 @@ const Header = () => {
   };
 
   return (
-    <div className="header-container" id="home">
+    <header className="header-container">
       <div className="logo">Abin Y</div>
 
       <div className="hamburger" onClick={toggleMenu}>
-        {isOpen ? '✖' : '☰'}
+        {isOpen ? "✖" : "☰"}
       </div>
 
-      <div className={`navlink ${isOpen ? 'show' : ''}`}>
-        <Link smooth className="nav-item" to="/#home" onClick={closeMenu}>
+      <nav className={`navlink ${isOpen ? "show" : ""}`}>
+        <Link smooth to="/#home" className="nav-item" onClick={closeMenu}>
           Home
         </Link>
-        <Link smooth className="nav-item" to="/#about" onClick={closeMenu}>
+
+        <Link smooth to="/#about" className="nav-item" onClick={closeMenu}>
           About
         </Link>
-        <Link smooth className="nav-item" to="/#services" onClick={closeMenu}>
+
+        <Link smooth to="/#services" className="nav-item" onClick={closeMenu}>
           Services
         </Link>
-        <Link smooth className="nav-item" to="/#skills" onClick={closeMenu}>
+
+        <Link smooth to="/#skills" className="nav-item" onClick={closeMenu}>
           Skills
         </Link>
-        <Link smooth className="nav-item" to="/#project" onClick={closeMenu}>
+
+        <Link smooth to="/#project" className="nav-item" onClick={closeMenu}>
           Project
         </Link>
-        <Link smooth className="nav-item" to="/#contact" onClick={closeMenu}>
+
+        <Link smooth to="/#contact" className="nav-item" onClick={closeMenu}>
           Contact
         </Link>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 

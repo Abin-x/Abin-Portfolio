@@ -8,10 +8,28 @@
   /* height: 100px; */
   padding: 20px 120px;
   z-index: 1000;
-  position: relative;
-  
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #0f2027, #000000, #233a44);
+  padding: 20px 120px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 
 
 /* Logo Styling */
@@ -58,6 +76,10 @@
   color: #298e95;
   font-weight: bold;
 }
+
+
+
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -75,7 +97,9 @@
     padding: 0 20px;
     max-height: 0;
     opacity: 0;
-    transition: max-height 0.7s ease, opacity 0.4s ease;
+    transition:
+      max-height 0.7s ease,
+      opacity 0.4s ease;
   }
 
   .navlink.show {
