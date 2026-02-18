@@ -97,8 +97,14 @@ const Home = () => {
               MongoDB, Express.js, React, and Node.js.
             </p>
             <div className="home-btn">
-              <button className="contact-btn"><a href="#contact">Hire Me</a></button>
-              <button className="download-btn"><a href="/img/Abin_Y_Resume.pdf" download>Download CV</a></button>
+              <button className="contact-btn">
+                <a href="#contact">Hire Me</a>
+              </button>
+              <button className="download-btn">
+                <a href="/img/Abin_Y_Resume.pdf" download>
+                  Download CV
+                </a>
+              </button>
             </div>
           </div>
           <div className="profile-img">
