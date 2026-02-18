@@ -10,7 +10,7 @@ const about = () => {
 
           <div className="home-about-grid">
             <div className="home-about-img">
-              <img src="/img/IMG_20250609_115924~2.jpg" alt="About Me" />
+              <img src="/img/IMG_20250608_091322.jpg" alt="About Me" />
             </div>
 
             <div className="home-about-banner">
