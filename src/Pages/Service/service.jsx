@@ -3,56 +3,60 @@ import './service.css';
 
 const Service = () => {
   return (
-    <div className="service-container" id='services'>
+    <div className="service-container" id="services">
       <div className="service-card-bg">
         <h2>My Services</h2>
+
         <div className="service-card-box">
+          
           <div className="service-card">
-            <h3>Web Development</h3>
+            <h3>Full-Stack Web Development</h3>
             <p>
-              I offer professional web development services using the latest
-              technologies and best practices. Whether you need a simple website
-              or a complex web application, I can help you achieve your goals.
+              I build scalable and secure web applications using the MERN stack,
+              handling everything from frontend UI to backend logic and database design.
             </p>
           </div>
+
           <div className="service-card">
-            <h3>UI/UX Design</h3>
+            <h3>Custom Application Development</h3>
             <p>
-              I design intuitive and visually appealing user interfaces with a
-              focus on user experience, ensuring that your product is both
-              beautiful and easy to use.
+              I develop tailored solutions such as booking systems, admin dashboards,
+              and role-based platforms based on real business requirements.
             </p>
           </div>
+
           <div className="service-card">
-            <h3>SEO & Optimization</h3>
+            <h3>Frontend Development (React)</h3>
             <p>
-              Improve your website’s performance and visibility with SEO best
-              practices, fast-loading pages, and mobile responsiveness.
+              I create responsive, modern, and interactive user interfaces using React,
+              ensuring smooth user experience across all devices.
             </p>
           </div>
+
           <div className="service-card">
-            <h3>Web Development</h3>
+            <h3>Backend & API Development</h3>
             <p>
-              I offer professional web development services using the latest
-              technologies and best practices. Whether you need a simple website
-              or a complex web application, I can help you achieve your goals.
+              I design secure RESTful APIs with Node.js and Express, including
+              authentication, authorization, and optimized MongoDB integration.
             </p>
           </div>
+
           <div className="service-card">
-            <h3>UI/UX Design</h3>
+            <h3>Authentication & Security</h3>
             <p>
-              I design intuitive and visually appealing user interfaces with a
-              focus on user experience, ensuring that your product is both
-              beautiful and easy to use.
+              Implementation of JWT-based authentication, role-based access control,
+              password encryption, and secure data handling.
             </p>
           </div>
+
           <div className="service-card">
-            <h3>SEO & Optimization</h3>
+            <h3>Deployment & Optimization</h3>
             <p>
-              Improve your website’s performance and visibility with SEO best
-              practices, fast-loading pages, and mobile responsiveness.
+              Deployment-ready applications with performance optimization,
+              clean architecture, and production-level configuration.
             </p>
           </div>
+
         </div>
       </div>
     </div>

@@ -1,3 +1,7 @@
+/* ================================= */
+/*            ABOUT SECTION          */
+/* ================================= */
+
 .home-about-me {
   width: 100%;
   padding: 60px 40px;
@@ -29,7 +33,6 @@
   z-index: 1;
 }
 
-/* GRID LAYOUT */
 .home-about-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -37,15 +40,15 @@
   gap: 40px;
 }
 
-/* IMAGE */
 .home-about-img {
-  flex-shrink: 0;
+  margin-left: 20px;
   width: 500px;
   height: 500px;
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid rgba(255, 255, 255, 0.3);
   transition: transform 0.4s ease;
+  margin-bottom: 35px;
 }
 
 .home-about-img img {
@@ -58,7 +61,6 @@
   transform: scale(1.05);
 }
 
-/* TEXT */
 .home-about-banner h3 {
   font-size: 24px;
   color: #28cbf0;
@@ -72,7 +74,6 @@
   color: #ffffff;
 }
 
-/* SOCIAL ICONS */
 .about-social-icons {
   margin-top: 20px;
   display: grid;
@@ -81,36 +82,21 @@
   width: fit-content;
 }
 
-/* .about-social-icons {
-  margin: 20px auto 0;
-  display: flex;
-  justify-content: center;
-} */
-
 .about-social-icons a {
   font-size: 24px;
-  transition:
-    transform 0.3s ease,
-    color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Brand colors */
 .about-social-icons .fa-instagram {
-  color: #e4405f; /* Instagram pink */
+  color: #e4405f;
 }
 
 .about-social-icons .fa-github {
-  color: #171515; /* GitHub black */
+  color: #171515;
 }
 
 .about-social-icons .fa-linkedin {
-  color: #0077b5; /* LinkedIn blue */
-}
-
-/* On hover, slightly brighten */
-.about-social-icons a:hover {
-  transform: scale(1.2);
-  filter: brightness(1.3);
+  color: #0077b5;
 }
 
 .about-social-icons a:hover {
@@ -118,7 +104,7 @@
   transform: scale(1.2);
 }
 
-/* RESPONSIVE */
+/* Responsive */
 @media (max-width: 768px) {
   .home-about-grid {
     grid-template-columns: 1fr;
@@ -127,6 +113,8 @@
 
   .home-about-img {
     max-width: 250px;
+    height: 250px;
+    margin: 0 auto 20px;
   }
 
   .home-about-banner h3 {
@@ -135,11 +123,9 @@
 
   .home-about-banner p {
     font-size: 15px;
-    text-align: justify;
   }
 
   .about-social-icons {
     justify-content: center;
-    gap: 20px;
   }
 }

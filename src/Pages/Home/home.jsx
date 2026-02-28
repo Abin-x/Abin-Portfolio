@@ -88,11 +88,11 @@ const Home = () => {
         <div className="home-banner">
           <div className="banner-text">
             <h1>
-              Hi, I'm <span>Abin Y</span>
+              I'm <span>Abin Y</span>
             </h1>
             <p className="domain">Full Stack Developer</p>
             <p className="bio">
-              Hi, I'm Abin Y, a MERN Stack Full Stack Developer with a passion
+              I'm Abin Y, a MERN Stack Full Stack Developer with a passion
               for building modern, responsive web applications. I specialize in
               MongoDB, Express.js, React, and Node.js.
             </p>
@@ -101,7 +101,7 @@ const Home = () => {
                 <a href="#contact">Hire Me</a>
               </button>
               <button className="download-btn">
-                <a href="/img/Abin_Y_Resume.pdf" download>
+                <a href="https://drive.google.com/file/d/1onmv0-3D9u2zuQdGgg0HW1bDC204ABGs/view?usp=sharing" download>
                   Download CV
                 </a>
               </button>

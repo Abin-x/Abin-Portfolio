@@ -21,10 +21,10 @@ const Contact = () => {
           <div className="contact-info">
             <h3>Get in Touch</h3>
             <p>
-              <FaEnvelope /> abin@example.com
+              <FaEnvelope /> officalabin@gmail.com
             </p>
             <p>
-              <FaPhoneAlt /> +91 9876543210
+              <FaPhoneAlt /> +91 7907483214
             </p>
             <p>
               <FaMapMarkerAlt /> Kochi, Kerala, India

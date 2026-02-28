@@ -1,9 +1,7 @@
-import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useState } from 'react';
 import './contactTest.css';
 
 const Contact = () => {
-  const form = useRef();
   const [formData, setFormData] = useState({
     user_name: '',
     user_email: '',
@@ -11,95 +9,121 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [success, setSuccess] = useState('');
 
-  // ✅ Regex validation functions
+  // Handle Input Change
+  const handleChange = e => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  // Validation
   const validate = () => {
-    const newErrors = {};
+    let newErrors = {};
 
-    if (!/^[a-zA-Z ]{3,30}$/.test(formData.user_name)) {
-      newErrors.user_name = 'Enter a valid name (letters only, 3–30 characters)';
+    if (!formData.user_name.trim()) {
+      newErrors.user_name = 'Name is required';
     }
 
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.user_email)) {
-      newErrors.user_email = 'Enter a valid email address';
+    if (!formData.user_email.trim()) {
+      newErrors.user_email = 'Email is required';
+    } else if (!/\S+@\S+\.\S+/.test(formData.user_email)) {
+      newErrors.user_email = 'Invalid email format';
     }
 
-    if (!formData.message || formData.message.length < 10) {
-      newErrors.message = 'Message must be at least 10 characters';
+    if (!formData.message.trim()) {
+      newErrors.message = 'Message is required';
     }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
-  // 🔄 Input change handler
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: '' });
-  };
-
-  // 🚀 Send email
-  const sendEmail = (e) => {
+  // Submit to Google Form
+  const sendToGoogleForm = async e => {
     e.preventDefault();
+
     if (!validate()) return;
 
-    emailjs
-      .sendForm('your_service_id', 'your_template_id', form.current, 'your_public_key')
-      .then(
-        (result) => {
-          alert('Message sent successfully!');
-          form.current.reset();
-          setFormData({ user_name: '', user_email: '', message: '' });
-        },
-        (error) => {
-          alert('Failed to send message. Try again later.');
-          console.error(error);
-        }
-      );
+    const formURL =
+      'https://docs.google.com/forms/d/e/1FAIpQLSdfBe9iwX3-SOiSnz-XTrB69hX3YDhg3i-1x7G-0btD7FW5Vg/formResponse';
+
+    const formBody = new FormData();
+    formBody.append('entry.535319089', formData.user_name);
+    formBody.append('entry.723127721', formData.user_email);
+    formBody.append('entry.247771939', formData.message);
+
+    try {
+      await fetch(formURL, {
+        method: 'POST',
+        mode: 'no-cors', // IMPORTANT
+        body: formBody,
+      });
+
+      setSuccess('Message sent successfully!');
+      setFormData({
+        user_name: '',
+        user_email: '',
+        message: '',
+      });
+      setErrors({});
+    } catch (error) {
+      console.error('Error submitting form', error);
+    }
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <div className="contact-card">
         <h2>Contact Me</h2>
-        <form className="contact-form" ref={form} onSubmit={sendEmail}>
+
+        <form className="contact-form" onSubmit={sendToGoogleForm}>
           <div className="form-group">
-            <label htmlFor="user_name">Name</label>
+            <label>Name</label>
             <input
               type="text"
-              id="user_name"
               name="user_name"
               value={formData.user_name}
               onChange={handleChange}
-              required
             />
-            {errors.user_name && <small style={{ color: 'red' }}>{errors.user_name}</small>}
+            {errors.user_name && (
+              <small style={{ color: 'red' }}>{errors.user_name}</small>
+            )}
           </div>
+
           <div className="form-group">
-            <label htmlFor="user_email">Email</label>
+            <label>Email</label>
             <input
               type="email"
-              id="user_email"
               name="user_email"
               value={formData.user_email}
               onChange={handleChange}
-              required
             />
-            {errors.user_email && <small style={{ color: 'red' }}>{errors.user_email}</small>}
+            {errors.user_email && (
+              <small style={{ color: 'red' }}>{errors.user_email}</small>
+            )}
           </div>
+
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label>Message</label>
             <textarea
-              id="message"
               name="message"
               rows="5"
               value={formData.message}
               onChange={handleChange}
-              required
             />
-            {errors.message && <small style={{ color: 'red' }}>{errors.message}</small>}
+            {errors.message && (
+              <small style={{ color: 'red' }}>{errors.message}</small>
+            )}
           </div>
+
           <button type="submit">Send Message</button>
+
+          {success && (
+            <p style={{ color: 'green', marginTop: '10px' }}>{success}</p>
+          )}
         </form>
       </div>
     </div>

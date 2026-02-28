@@ -101,7 +101,7 @@ const Skills = () => {
                   />
                 )}
                 <p>{skill.name}</p>
-                <div className="progress-bar-bg">
+                {/* <div className="progress-bar-bg">
                   <div
                     className="progress-bar-fill"
                     style={{
@@ -110,7 +110,7 @@ const Skills = () => {
                     }}
                   ></div>
                   <span className="progress-percent">{skill.level}</span>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>
